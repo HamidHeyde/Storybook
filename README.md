@@ -15,11 +15,13 @@ npm install gh-pages --save-dev
 ###### Add deployment script
 In `package.json`:
 ```json
-"homepage": "http://YOUR_GITHUB_USERNAME.github.io/REPO_NAME
-...
+/* beginning of the package.json */
+"homepage": "http://YOUR_GITHUB_USERNAME.github.io/REPO_NAME",
+
+/* ... Rest of the package.json content*/
 
 "scripts": {
-    // ... Other Scripts
+    /* ... Other Scripts */
     "predeployStorybook": "npm run build-storybook",
     "deployStorybook": "gh-pages -d storybook-static"
 },
