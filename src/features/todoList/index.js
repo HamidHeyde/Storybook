@@ -2,8 +2,32 @@ import "./index.css"
 import { useState } from "react"
 import { TodoItem } from "./components/TodoItem"
 import { AddTodo } from "./components/AddTodo"
+// todoList data
+const todoList = [
+  {
+    id: 1,
+    title: "Learn React",
+    completed: false,
+    pinned: true,
+    favorite: false,
+  },
+  {
+    id: 2,
+    title: "Learn Redux",
+    completed: false,
+    pinned: false,
+    favorite: true,
+  },
+  {
+    id: 3,
+    title: "Learn React Router",
+    completed: true,
+    pinned: false,
+    favorite: false,
+  },
+]
 
-export const TodoApp = ({ todoList }) => {
+export const TodoApp = () => {
   const [todo, setTodo] = useState(todoList || [])
 
   // Star Click Handler
