@@ -1,0 +1,10 @@
+.leftMenu {
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: teal;
+}
