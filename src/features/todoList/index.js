@@ -75,19 +75,21 @@ export const TodoApp = () => {
 
   return (
     <div className="todoAppWrapper">
-      {/* Add Todo Item */}
-      <AddTodo todo={todo} setTodo={setTodo} />
-      {/* Todo List */}
-      <div className="todoListWrapper">
-        {todo.map((todoItem) => (
-          <TodoItem
-            key={todoItem.id}
-            todoItem={todoItem}
-            onPinClickHandler={onPinClickHandler}
-            onStarClickHandler={onStarClickHandler}
-            onCheckboxClickHandler={onCheckboxClickHandler}
-          />
-        ))}
+      <div className="todoWrapper">
+        {/* Add Todo Item */}
+        <AddTodo todo={todo} setTodo={setTodo} />
+        {/* Todo List */}
+        <div className="todoListWrapper">
+          {todo.map((todoItem) => (
+            <TodoItem
+              key={todoItem.id}
+              todoItem={todoItem}
+              onPinClickHandler={onPinClickHandler}
+              onStarClickHandler={onStarClickHandler}
+              onCheckboxClickHandler={onCheckboxClickHandler}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
