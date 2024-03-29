@@ -1,0 +1,19 @@
+.todoAppWrapper {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px 0 0;
+}
+
+.todoListWrapper {
+  box-sizing: border-box;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 0 10px;
+}
