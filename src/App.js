@@ -1,12 +1,51 @@
-import './app.css'
-import {TodoApp} from './features/todoList';
-import {CustomComponents} from './features/customComponents';
+import "./app.css"
+import { useState } from "react"
+import { TodoApp } from "./features/todoList"
+import { CustomComponents as HeatMaps } from "./features/customComponents"
+import { LeftMenu } from "./features/leftMenu"
+import { ReactComponent as Map } from "./features/customComponents/assets/map.svg"
+import { ReactComponent as Todo } from "./features/customComponents/assets/todo.svg"
 
-const App = () => (
-  <div className="appWrapper">
-    <TodoApp/>
-    <CustomComponents/>
-  </div>
-)
+const menuItems = [
+  {
+    name: "HeatMaps",
+    icon: Map,
+  },
+  {
+    name: "TodoApp",
+    icon: Todo,
+  },
+]
 
-export default App;
+const getComponent = (name) => {
+  const selectedMenu = {
+    "HeatMaps": HeatMaps,
+    "TodoApp": TodoApp,
+  }
+
+  return selectedMenu[name] || TodoApp
+}
+
+const App = () => {
+  const [selectedMenu, setSelectedMenu] = useState("TodoApp")
+  const menuItemClickHandler = (name) => {
+    setSelectedMenu(name)
+  }
+
+  const Component = getComponent(selectedMenu)
+
+  return (
+    <div className="appWrapper">
+      <LeftMenu
+        items={menuItems}
+        selectedMenu={selectedMenu}
+        menuItemClickHandler={menuItemClickHandler}
+      />
+      <div className="mainContent">
+        <Component/>
+      </div>
+    </div>
+  )
+}
+
+export default App
