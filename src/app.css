@@ -1,6 +1,6 @@
 .appWrapper {
   box-sizing: border-box;
-  width: 900px;
+  width: 1000px;
   height: 100vh;
   display: flex;
   flex-direction: row;
