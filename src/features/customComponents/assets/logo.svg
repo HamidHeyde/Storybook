@@ -3,10 +3,10 @@
 <ellipse cx="20.0903" cy="17" rx="12.9566" ry="17.3282" transform="rotate(75 20.0903 17)" fill="#D9D8D8"/>
 </g>
 <g filter="url(#filter1_d_543_18921)">
-<ellipse cx="20.9879" cy="19.7571" rx="7.52323" ry="11.4773" transform="rotate(54.806 20.9879 19.7571)" fill="#888888"/>
+<ellipse cx="20.9879" cy="19.7571" rx="7.52323" ry="11.4773" transform="rotate(54.806 20.9879 19.7571)" fill="teal"/>
 </g>
 <g filter="url(#filter2_d_543_18921)">
-<ellipse cx="19.8977" cy="22.7768" rx="3.66608" ry="6.19063" transform="rotate(54.806 19.8977 22.7768)" fill="#ED1C24"/>
+<ellipse cx="19.8977" cy="22.7768" rx="3.66608" ry="6.19063" transform="rotate(54.806 19.8977 22.7768)" fill="#D9D8D8"/>
 </g>
 <defs>
 <filter id="filter0_d_543_18921" x="1.89859" y="2.86193" width="36.944" height="29.3951" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
