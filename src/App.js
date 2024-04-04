@@ -27,7 +27,7 @@ const getComponent = (name) => {
 }
 
 const App = () => {
-  const [selectedMenu, setSelectedMenu] = useState("TodoApp")
+  const [selectedMenu, setSelectedMenu] = useState("HeatMaps")
   const menuItemClickHandler = (name) => {
     setSelectedMenu(name)
   }
