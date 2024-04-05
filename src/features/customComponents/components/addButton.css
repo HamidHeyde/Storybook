@@ -1,0 +1,11 @@
+.addButton {
+  color: #9A9A9A;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.addButton:hover {
+  color: teal;
+}
