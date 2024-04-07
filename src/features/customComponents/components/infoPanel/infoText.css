@@ -1,0 +1,22 @@
+.infoWrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.infoWrapper .title {
+  color: #4b4b4b;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+
+.infoWrapper .text {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
