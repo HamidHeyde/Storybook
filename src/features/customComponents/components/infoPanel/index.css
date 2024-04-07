@@ -1,0 +1,8 @@
+.infoPanelWrapper {
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
