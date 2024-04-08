@@ -1,9 +1,8 @@
 export const MapData = [
   {
+    id: 1,
     name: "1st Map",
     description: "1st Map description",
-    type: "user",
-    owner_ids: ["8c678a71-e222-4567-bc38-7a11b842448b"],
     group_ids: [],
     metrics: [
       {
@@ -35,13 +34,13 @@ export const MapData = [
         ranges: [0, 43, 61, 100],
       },
     ],
-    suspended_at: null,
+    pin: false,
+    favorite: false,
   },
   {
+    id: 2,
     name: "2nd Map",
     description: "2nd Map description",
-    type: "business",
-    owner_ids: ["8c678a71-e222-4567-bc38-7a11b842448b"],
     group_ids: [],
     metrics: [
       {
@@ -73,6 +72,7 @@ export const MapData = [
         ranges: [0, 16, 27, 46],
       },
     ],
-    suspended_at: null,
+    pin: false,
+    favorite: false,
   },
 ]
