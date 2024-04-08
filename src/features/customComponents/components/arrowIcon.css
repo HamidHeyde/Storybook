@@ -1,0 +1,17 @@
+.arrowDownIcon {
+  box-sizing: border-box;
+  fill: teal;
+  transition-property: transform, background-color;
+  transition-duration: 0.45s;
+  transition-timing-function: ease-out;
+  border-radius: 50%;
+}
+
+.arrowDownIcon:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.arrowDownIconOpen{
+  transform: rotate(-180deg);
+}
