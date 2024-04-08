@@ -1,5 +1,5 @@
 import "./dataPanelContent.css"
-import { DataContent } from "./content/DataContent"
+import { DataContentItem } from "./content/DataContentItem"
 import { NoDataContent } from "./content/NoDataContent"
 import { DataPanelContentFunctions } from "./DataPanelContentFunctions"
 
@@ -12,7 +12,9 @@ export const DataPanelContent = ({ setPanel, maps, setMaps }) => {
         setMaps={setMaps}
       />
       <div className="contentList">
-        {maps.length === 0 ? <NoDataContent /> : <DataContent maps={maps} />}
+        {maps.length === 0 ? <NoDataContent /> : maps.map((map, index) => (
+          <DataContentItem key={`map_${index}`} map={map} />
+        ))}
       </div>
     </div>
   )
