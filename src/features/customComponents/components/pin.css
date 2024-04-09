@@ -1,0 +1,26 @@
+.pinWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+}
+
+.pinWrapper:hover {
+  cursor: pointer;
+}
+
+.pinBase {
+  box-sizing: border-box;
+}
+
+.pinBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.pinWrapper .pinned2 {
+  fill: teal;
+  transform: rotate(45deg);
+}
+
+.pinWrapper .notPinned2 {
+  fill: #eee;
+}
