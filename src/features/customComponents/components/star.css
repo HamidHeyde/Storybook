@@ -1,0 +1,30 @@
+.starWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+  transition-property: transform, fill;
+  transition-duration: 0.65s;
+  transition-timing-function: ease-out;
+}
+
+.starWrapper:hover {
+  cursor: pointer;
+}
+
+.starBase {
+  box-sizing: border-box;
+}
+
+.starBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.starWrapper .starred2 {
+  fill: teal;
+  transform: rotate(-45deg);
+}
+
+.starWrapper .notStarred2 {
+  fill: #eee;
+}
+
