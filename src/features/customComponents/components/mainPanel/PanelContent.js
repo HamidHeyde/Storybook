@@ -21,8 +21,8 @@ export const PanelContent = ({ maps, setMaps }) => {
 
   const panelProperties = {
     ...{ setPanel },
-    ...(panel === "DataPanel" && { maps, setMaps }),
     ...(panel === "NewPanel" && { maps, setMaps }),
+    ...(panel === "DataPanel" && { maps, setMaps }),
   }
 
   return (
