@@ -41,6 +41,7 @@
 }
 
 .mapSettingsWrapper {
+  box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid #d9d8d8;
   padding: 0px 10px;
