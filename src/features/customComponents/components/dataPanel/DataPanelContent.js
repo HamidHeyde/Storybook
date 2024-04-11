@@ -2,6 +2,7 @@ import "./dataPanelContent.css"
 import { DataContentItem } from "./content/DataContentItem"
 import { NoDataContent } from "./content/NoDataContent"
 import { DataPanelContentFunctions } from "./DataPanelContentFunctions"
+import { DataContentItemDetails } from "./content/DataContentItemDetails"
 
 export const DataPanelContent = ({ setPanel, maps, setMaps }) => {
   const starClickHandler = (id) => {
@@ -43,7 +44,9 @@ export const DataPanelContent = ({ setPanel, maps, setMaps }) => {
                 map={map}
                 pinClickHandler={pinClickHandler}
                 starClickHandler={starClickHandler}
-              />
+              >
+                <DataContentItemDetails key={`mapDetails_${index}`} map={map} />
+              </DataContentItem>
             ))
         )}
       </div>
