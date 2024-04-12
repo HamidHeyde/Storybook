@@ -2,6 +2,7 @@ import "./dataContentItemDetails.css"
 import { MapLabel } from "../../MapLabel"
 import { WSpacer } from "../../WSpacer"
 import { MapAutoComplete } from "../../AutoComplete"
+import { MapBubbleSlider } from "../../MapBubbleSlider"
 
 const dynamicFieldsOptions = [
   {
@@ -143,6 +144,19 @@ export const DataContentItemDetails = ({ map }) => {
             name={"sizeCalc"}
             options={operationsOptions}
             readonly={true}
+          />
+        </div>
+        <div className={"panelRow"}>
+          <MapLabel
+            type={"normal"}
+            width={"20%"}
+            text=""
+          />
+          <MapBubbleSlider
+            width={"80%"}
+            disabled={true}
+            // onChange={(newValue)=> console.log(newValue)}
+            defaultValues={getMetric(mapMetrics, "size", "ranges")}
           />
         </div>
       </div>
