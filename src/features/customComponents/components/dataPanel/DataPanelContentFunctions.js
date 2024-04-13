@@ -3,16 +3,16 @@ import { AddButton } from "../AddButton"
 import { SortButton } from "../SortButton"
 import { MapSearch } from '../MapSearch'
 
-export const DataPanelContentFunctions = ({ setPanel, mapsCount, setMaps }) => {
+export const DataPanelContentFunctions = ({ setPanel, maps, setMaps }) => {
   const addButtonClickHandler = () => {
     setPanel("NewPanel")
   }
 
   return (
     <div className="contentFunctions">
-      <div className="contentHeaderInfo">{mapsCount || "No"} Maps</div>
+      <div className="contentHeaderInfo">{maps.length || "No"} Maps</div>
       <div className="contentHeaderFunctions">
-        <MapSearch />
+        <MapSearch maps={maps} setMaps={setMaps} />
         <SortButton />
         <AddButton onClick={addButtonClickHandler} />
       </div>
