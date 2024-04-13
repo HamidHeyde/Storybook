@@ -13,7 +13,7 @@ export const DataPanelContentFunctions = ({ setPanel, maps, setMaps }) => {
       <div className="contentHeaderInfo">{maps.length || "No"} Maps</div>
       <div className="contentHeaderFunctions">
         <MapSearch maps={maps} setMaps={setMaps} />
-        <SortButton />
+        <SortButton maps={maps} setMaps={setMaps} />
         <AddButton onClick={addButtonClickHandler} />
       </div>
     </div>
