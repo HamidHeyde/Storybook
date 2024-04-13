@@ -1,7 +1,7 @@
 import "./sortButton.css"
 import { useState } from "react"
 
-export const SortButton = () => {
+export const SortButton = ({ maps, setMaps }) => {
   const [showSortOptions, setShowSortOptions] = useState(false)
 
   const toggleOptionMenu = () => {
