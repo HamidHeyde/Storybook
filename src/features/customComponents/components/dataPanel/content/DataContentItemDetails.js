@@ -4,6 +4,7 @@ import { WSpacer } from "../../WSpacer"
 import { MapAutoComplete } from "../../AutoComplete"
 import { MapBubbleSlider } from "../../MapBubbleSlider"
 import { MapColorSlider } from "../../MapColorSlider"
+import { MapShadowSlider } from "../../MapShadowSlider"
 
 const dynamicFieldsOptions = [
   {
@@ -229,6 +230,15 @@ export const DataContentItemDetails = ({ map }) => {
             name={"shadowCalc"}
             options={operationsOptions}
             readonly={true}
+          />
+        </div>
+        <div className={"panelRow"}>
+          <MapLabel type={"normal"} width={"20%"} text="" />
+          <MapShadowSlider
+            width={"80%"}
+            disabled={true}
+            // onChange={(newValue)=> console.log(newValue)}
+            defaultValues={getMetric(mapMetrics, "shadow", "ranges")}
           />
         </div>
       </div>
