@@ -3,8 +3,8 @@ import { useState } from "react"
 import SearchIcon from "@mui/icons-material/Search"
 import ClearIcon from "@mui/icons-material/Clear"
 
-export const MapSearch = () => {
-  const [searchText, setSearchtext] = useState("")
+export const MapSearch = ({ maps, setMaps }) => {
+  const [searchText, setSearchText] = useState("")
   const [isSearchBoxOpen, SetIsSearchBoxOpen] = useState(false)
 
   const handleOnKeyDown = (e) => {
@@ -17,30 +17,17 @@ export const MapSearch = () => {
     // if the search component is minimized
     if (!isSearchBoxOpen) return SetIsSearchBoxOpen(true)
 
-    // if the search component is open
-    // setSortSearch({
-    //   ...sortSearch,
-    //   [currentTab]: {
-    //     ...sortSearch[currentTab],
-    //     searchText: searchText,
-    //   },
-    // })
+    setMaps(maps.map((item) => ({ ...item, ...({visible: item.name.toLowerCase().includes(searchText.toLowerCase()) ? true: false}) })))
   }
 
   const searchTextChange = (e) => {
-    setSearchtext(e.target.value)
+    setSearchText(e.target.value)
   }
 
   const handleClearButtonClick = () => {
-    setSearchtext("")
+    setSearchText("")
 
-    // setSortSearch({
-    //   ...sortSearch,
-    //   [currentTab]: {
-    //     ...sortSearch[currentTab],
-    //     searchText: "",
-    //   },
-    // })
+    setMaps(maps.map((item) => ({ ...item, visible: true })))
 
     SetIsSearchBoxOpen(false)
   }
