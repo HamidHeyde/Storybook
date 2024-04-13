@@ -29,7 +29,7 @@ export const DataPanelContent = ({ setPanel, maps, setMaps }) => {
     <div className="dataPanelContentWrapper">
       <DataPanelContentFunctions
         setPanel={setPanel}
-        mapsCount={maps.length}
+        maps={maps}
         setMaps={setMaps}
       />
       <div className="contentList">
