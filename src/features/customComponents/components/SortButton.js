@@ -3,6 +3,7 @@ import { useState } from "react"
 
 const sortFuncs = {
   az_asc: (a, b) => a["name"].localeCompare(b["name"]),
+  az_desc: (a, b) => b["name"].localeCompare(a["name"]),
 }
 
 export const SortButton = ({ maps, setMaps }) => {
