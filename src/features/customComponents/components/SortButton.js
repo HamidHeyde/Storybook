@@ -1,11 +1,19 @@
 import "./sortButton.css"
 import { useState } from "react"
 
+const sortFuncs = {
+  az_asc: (a, b) => a["name"].localeCompare(b["name"]),
+}
+
 export const SortButton = ({ maps, setMaps }) => {
   const [showSortOptions, setShowSortOptions] = useState(false)
 
   const toggleOptionMenu = () => {
     setShowSortOptions((prev) => !prev)
+  }
+
+  const handleSortItems = (sortType, sortOrder) => {
+    setMaps([ ...maps.sort(sortFuncs[`${sortType}_${sortOrder}`])])
   }
 
   return (
@@ -22,27 +30,15 @@ export const SortButton = ({ maps, setMaps }) => {
           <div className="optionsMenuWrapper">
             <div
               className="optionsMenuItem"
-              // onClick={() => handleSortItems("az", "asc")}
+              onClick={() => handleSortItems("az", "asc")}
             >
               By A-Z
             </div>
             <div
               className="optionsMenuItem"
-              // onClick={() => handleSortItems("az", "desc")}
+              onClick={() => handleSortItems("az", "desc")}
             >
               By Z-A
-            </div>
-            <div
-              className="optionsMenuItem"
-              // onClick={() => handleSortItems("date", "asc")}
-            >
-              By Date Asc
-            </div>
-            <div
-              className="optionsMenuItem"
-              // onClick={() => handleSortItems("date", "desc")}
-            >
-              By Date Desc
             </div>
           </div>
           <div className="optionMenuTriangle"></div>
