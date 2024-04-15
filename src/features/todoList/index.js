@@ -5,7 +5,6 @@ import { AddTodo } from "./components/AddTodo"
 import { TodoListData } from "./data/TodoListData"
 
 export const TodoApp = () => {
-  console.log(TodoListData)
   const [todo, setTodo] = useState(TodoListData || [])
 
   // Star Click Handler
