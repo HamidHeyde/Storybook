@@ -1,0 +1,13 @@
+.mapTextFieldWrapper {
+  color: #888888;
+  border: 1px solid #9a9a9a;
+  height: 25px;
+  padding: 1px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.mapTextFieldWrapper:focus {
+  outline: none;
+}
