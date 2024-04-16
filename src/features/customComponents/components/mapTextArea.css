@@ -1,0 +1,17 @@
+.mapTextAreaWrapper {
+  color: #888888;
+  border: 1px solid #9a9a9a;
+  padding: 4px 5px;
+  max-height: 42px;
+  min-height: 42px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.mapTextAreaWrapper:focus {
+  outline: none;
+}
+
+.mapTextAreaWrapper::-webkit-scrollbar {
+  width: 5;
+}
