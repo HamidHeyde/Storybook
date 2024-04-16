@@ -1,3 +1,4 @@
+import './autoComplete.css'
 import React, { useState, useEffect } from "react"
 import { MapLabel } from "./MapLabel"
 import SearchIcon from "@mui/icons-material/Search"
