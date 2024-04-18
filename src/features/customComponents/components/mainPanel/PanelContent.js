@@ -14,14 +14,14 @@ const getPanel = (panel) => {
   return stringToComponent[panel] || InfoPanel
 }
 
-export const PanelContent = ({ maps, setMaps }) => {
+export const PanelContent = ({ maps, setMaps, showAlert, setShowAlert }) => {
   const [panel, setPanel] = useState("InfoPanel")
 
   const Component = getPanel(panel)
 
   const panelProperties = {
     ...{ setPanel },
-    ...(panel === "NewPanel" && { maps, setMaps }),
+    ...(panel === "NewPanel" && { maps, setMaps, showAlert, setShowAlert }),
     ...(panel === "DataPanel" && { maps, setMaps }),
   }
 
