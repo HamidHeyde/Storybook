@@ -1,0 +1,31 @@
+.newPanelContentWrapper {
+  width: 100%;
+  padding: 0px 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.newPanelContentWrapper .panelMultiRow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newPanelContentWrapper::-webkit-scrollbar {
+  width: 5;
+}
+
+.newPanelContentWrapper .panelRow {
+  width: 100%;
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newPanelContentWrapper .borderBottom {
+  border-bottom: 1px solid #d9d8d8;
+}
