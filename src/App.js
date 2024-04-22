@@ -1,6 +1,6 @@
 import "./app.css"
 import { useState } from "react"
-import { TodoApp } from "./features/todoList"
+import { TodoApp } from "./features/taskPlanner"
 import { CustomComponents as HeatMaps } from "./features/customComponents"
 import { LeftMenu } from "./features/leftMenu"
 import { ReactComponent as Map } from "./features/customComponents/assets/map.svg"
