@@ -1,5 +1,7 @@
 import "./addTodo.css"
 import { useRef } from "react"
+import { Button } from "./Button"
+import { TextInput } from "./TextInput"
 
 export const AddTodo = ({ todo, setTodo }) => {
   const inputRef = useRef("")
@@ -27,18 +29,8 @@ export const AddTodo = ({ todo, setTodo }) => {
 
   return (
     <div className="addTodoWrapper">
-      <input
-        className="addTodoInput"
-        type="text"
-        value={inputRef.current.value}
-        onChange={inputChangeHandler}
-      />
-      <button
-        className="addTodoButton"
-        onClick={addTodoHandler}
-      >
-        Add Todo Item
-      </button>
+      <TextInput value={inputRef.current.value} onChange={inputChangeHandler} />
+      <Button text="Add Todo Item" onClick={addTodoHandler} />
     </div>
   )
 }
