@@ -9,7 +9,8 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-a11y",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    '@storybook/addon-jest',
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -17,6 +18,7 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+    defaultName: "Documentation",
   },
   staticDirs: ["../public"],
 }
