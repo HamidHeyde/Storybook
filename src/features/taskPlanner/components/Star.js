@@ -8,7 +8,7 @@ export const Star = ({ id, favorite, onClick, size }) => {
   const starProps = {
     className: ["starBase", starClass].join(" "),
     ...(onClick && { onClick: () => onClick(id) }),
-    style: { "font-size": size ? `${size}rem` : "1.5rem" },
+    style: { fontSize: size ? `${size}rem` : "1.5rem" },
   }
 
   return (
