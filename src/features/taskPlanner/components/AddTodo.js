@@ -29,8 +29,8 @@ export const AddTodo = ({ todo, setTodo }) => {
 
   return (
     <div className="addTodoWrapper">
-      <TextInput value={inputRef.current.value} onChange={inputChangeHandler} />
-      <Button text="Add Todo Item" onClick={addTodoHandler} />
+      <TextInput width={60} value={inputRef.current.value} onChange={inputChangeHandler} />
+      <Button width={30} text="Add a task" onClick={addTodoHandler} />
     </div>
   )
 }
