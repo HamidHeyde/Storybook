@@ -1,5 +1,6 @@
-import { useState } from "react"
 import "./checkbox.css"
+import { useState } from "react"
+import PropTypes from "prop-types"
 
 export const Checkbox = ({ id, label, onClick, defaultChecked }) => {
   const [checked, setChecked] = useState(defaultChecked || false)
@@ -12,13 +13,17 @@ export const Checkbox = ({ id, label, onClick, defaultChecked }) => {
   }
 
   return (
-    <div
-      className="checkboxWrapper"
-      onClick={handleClick}
-    >
+    <div className="checkboxWrapper" onClick={handleClick}>
       <input type="checkbox" checked={checked} readOnly />
       <label>{label}</label>
     </div>
   )
 }
 
+// PropTypes
+Checkbox.propTypes = {
+  id: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  defaultChecked: PropTypes.bool,
+}
