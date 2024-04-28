@@ -1,7 +1,7 @@
 import "./index.css"
 import { useState } from "react"
 import { TodoItem } from "./components/TodoItem"
-import { AddTodo } from "./components/AddTodo"
+import { AddTask } from "./components/AddTask"
 import { TodoListData } from "./data/TodoListData"
 
 export const TodoApp = () => {
@@ -53,8 +53,8 @@ export const TodoApp = () => {
   return (
     <div className="todoAppWrapper">
       <div className="todoWrapper">
-        {/* Add Todo Item */}
-        <AddTodo todo={todo} setTodo={setTodo} />
+        {/* Add Task Item */}
+        <AddTask todo={todo} setTodo={setTodo} />
         {/* Todo List */}
         <div className="taskPlannerWrapper">
           {todo.map((todoItem) => (
