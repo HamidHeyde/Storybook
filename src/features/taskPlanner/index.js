@@ -1,6 +1,6 @@
 import "./index.css"
 import { useState } from "react"
-import { TodoItem } from "./components/TodoItem"
+import { TaskItem } from "./components/TaskItem"
 import { AddTask } from "./components/AddTask"
 import { TodoListData } from "./data/TodoListData"
 
@@ -58,7 +58,7 @@ export const TodoApp = () => {
         {/* Todo List */}
         <div className="taskPlannerWrapper">
           {todo.map((todoItem) => (
-            <TodoItem
+            <TaskItem
               key={todoItem.id}
               todoItem={todoItem}
               onPinClickHandler={onPinClickHandler}
