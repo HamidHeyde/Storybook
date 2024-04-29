@@ -1,0 +1,29 @@
+.pinWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+}
+
+.pinWrapper:hover {
+  cursor: pointer;
+}
+
+.pinBase {
+  box-sizing: border-box;
+}
+
+.pinBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.pinWrapper .pinned {
+  fill: #e4ff40;
+  transform: rotate(45deg);
+}
+
+.pinWrapper .notPinned {
+  fill: #eee;
+}
+
+
+/*# sourceMappingURL=features-taskPlanner-components-Pin-stories.9705dd4c.chunk.css.map*/

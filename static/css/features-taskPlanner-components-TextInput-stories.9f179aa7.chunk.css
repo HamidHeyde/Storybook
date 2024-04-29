@@ -1,0 +1,12 @@
+.addTodoInput {
+  border: 1px teal solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.addTodoInput:focus {
+    outline: none;
+}
+
+/*# sourceMappingURL=features-taskPlanner-components-TextInput-stories.9f179aa7.chunk.css.map*/

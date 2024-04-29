@@ -1,0 +1,30 @@
+.starWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+}
+
+.starWrapper:hover {
+  cursor: pointer;
+}
+
+.starBase {
+  box-sizing: border-box;
+}
+
+.starBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.starWrapper .starred {
+  fill: #e4ff40;
+  transform: rotate(-45deg);
+}
+
+.starWrapper .notStarred {
+  fill: #eee;
+}
+
+
+
+/*# sourceMappingURL=features-taskPlanner-components-Star-stories.69ef6eca.chunk.css.map*/
