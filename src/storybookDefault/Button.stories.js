@@ -1,48 +1,76 @@
-import { fn } from '@storybook/test';
-import { Button } from './Button';
+import { Button } from "./Button"
+import { fn, userEvent, within } from "@storybook/test"
+import { expect } from "@storybook/test"
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+} from "@storybook/blocks"
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: Button,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
-};
+  tags: ["autodocs"],
+}
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Default = {
   args: {
+    name: "myButton",
     primary: true,
-    label: 'Button',
+    label: "Button",
+    onClick: fn(),
   },
-};
+  argTypes: {
+    backgroundColor: { control: "color" },
+    label: { control: "text" },
+    size: { control: "select" },
+    // label: {
+    //   control: "select",
+    //   options: ["Normal", "Bold", "Italic"],
+    //   mapping: {
+    //     Bold: <b>Bold</b>,
+    //     Italic: <i>Italic</i>,
+    //   },
+    // },
+  },
+  parameters: {
+    layout: "centered",
+    backgrounds: {
+      values: [
+        { name: "light", value: "#fff" },
+        { name: "semi-dark", value: "#999" },
+        { name: "dark", value: "#555" },
+      ],
+    },
+    controls: {
+      exclude: ["name"],
+    },
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Primary />
+          <Controls />
+          <Stories />
+        </>
+      ),
+    },
+  },
+  render: (args) => <Button {...args} />,
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
 
-export const Secondary = {
-  args: {
-    label: 'Button',
-  },
-};
+    const button = (await canvas.findAllByRole("button"))[0]
 
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
+    expect(button).toBeInTheDocument()
+    expect(button).toHaveClass("storybook-button--primary")
 
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
+    await userEvent.click(button)
   },
-};
+}
