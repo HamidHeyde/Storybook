@@ -22,13 +22,6 @@ export default {
 export const Default = {
   args: {
     todo: [
-      {
-        id: 1,
-        completed: false,
-        favorite: false,
-        pinned: false,
-        title: "1st One",
-      },
     ],
     setTodo: fn(),
   },
