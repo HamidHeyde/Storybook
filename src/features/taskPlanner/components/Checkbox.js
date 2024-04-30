@@ -1,9 +1,14 @@
 import "./checkbox.css"
 import { useState } from "react"
 import PropTypes from "prop-types"
+import { useEffect } from "react"
 
 export const Checkbox = ({ id, label, onClick, defaultChecked }) => {
-  const [checked, setChecked] = useState(defaultChecked || false)
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    setChecked(defaultChecked || false)
+  }, [defaultChecked])
 
   const handleClick = () => {
     const newValue = !checked
