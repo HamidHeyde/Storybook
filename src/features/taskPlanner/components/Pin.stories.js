@@ -4,7 +4,7 @@ import { storybookSettings } from "../storybook/globals"
 
 
 export default {
-  title: "TaskPlanner/Elements/Pin",
+  title: "Elements/Pin",
   component: Pin,
   parameters: {
     ...storybookSettings("centered"),
