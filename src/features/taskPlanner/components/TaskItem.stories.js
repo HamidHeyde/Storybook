@@ -3,7 +3,7 @@ import { TaskItem } from "./TaskItem"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "TaskPlanner/Compounds/TaskItem",
+  title: "Compounds/TaskItem",
   component: TaskItem,
   parameters: {
     ...storybookSettings("centered"),
