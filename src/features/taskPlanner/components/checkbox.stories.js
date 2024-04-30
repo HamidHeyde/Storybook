@@ -6,10 +6,7 @@ export default {
   title: "Elements/Checkbox",
   component: Checkbox,
   parameters: {
-    ...storybookSettings("centered"),
-    controls: {
-      exclude: ["defaultChecked"],
-    },
+    ...storybookSettings("centered")
   },
   tags: ["autodocs"],
   render: (args) => <Checkbox {...args} />,
@@ -18,7 +15,7 @@ export default {
 export const Default = {
   args: {
     id: 1,
-    label: "Checkbox Text",
+    label: "",
     onClick: fn(),
     defaultChecked: false,
   },
@@ -27,7 +24,7 @@ export const Default = {
 export const Checked = {
   args: {
     id: 1,
-    label: "Checkbox Text",
+    label: "",
     onClick: fn(),
     defaultChecked: true,
   },
