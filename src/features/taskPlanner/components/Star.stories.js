@@ -3,7 +3,7 @@ import { Star } from "./Star"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "TaskPlanner/Elements/Star",
+  title: "Elements/Star",
   component: Star,
   parameters: {
     ...storybookSettings("centered"),
