@@ -57,10 +57,10 @@ export const TodoApp = () => {
         <AddTask todo={todo} setTodo={setTodo} />
         {/* Todo List */}
         <div className="taskPlannerWrapper">
-          {todo.map((todoItem) => (
+          {todo.map((taskItem) => (
             <TaskItem
-              key={todoItem.id}
-              todoItem={todoItem}
+              key={taskItem.id}
+              taskItem={taskItem}
               onPinClickHandler={onPinClickHandler}
               onStarClickHandler={onStarClickHandler}
               onCheckboxClickHandler={onCheckboxClickHandler}
