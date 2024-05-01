@@ -3,7 +3,7 @@ import { AddTask } from "./AddTask"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "TaskPlanner/Compounds/AddTask",
+  title: "Compounds/AddTask",
   component: AddTask,
   parameters: {
     ...storybookSettings("centered"),
