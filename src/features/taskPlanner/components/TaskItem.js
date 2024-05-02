@@ -2,14 +2,16 @@ import "./taskItem.css"
 import { Pin } from "./Pin"
 import { Star } from "./Star"
 import { Checkbox } from "./Checkbox"
+import PropTypes from "prop-types"
+
 
 export const TaskItem = ({
-  todoItem,
+  taskItem,
   onStarClickHandler,
   onPinClickHandler,
   onCheckboxClickHandler,
 }) => {
-  const { id, title, completed, pinned, favorite } = todoItem
+  const { id, title, completed, pinned, favorite } = taskItem
 
   return (
     <div className="todoItem">
@@ -27,4 +29,18 @@ export const TaskItem = ({
       </div>
     </div>
   )
+}
+
+// prop types
+TaskItem.propTypes = {
+  taskItem: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    completed: PropTypes.bool.isRequired,
+    pinned: PropTypes.bool.isRequired,
+    favorite: PropTypes.bool.isRequired,
+  }).isRequired,
+  onStarClickHandler: PropTypes.func,
+  onPinClickHandler: PropTypes.func,
+  onCheckboxClickHandler: PropTypes.func,
 }
