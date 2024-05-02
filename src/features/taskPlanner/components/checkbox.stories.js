@@ -29,3 +29,25 @@ export const Checked = {
     defaultChecked: true,
   },
 }
+
+export const WithLabel = {
+  args: {
+    id: 1,
+    label: "Checkbox with label",
+    onClick: fn(),
+    defaultChecked: false,
+  },
+  parameters: {
+    controls: {
+      exclude: ["defaultChecked"],
+    },
+  },
+  render: (args) => {
+    return (
+      <div style={{ display: "flex", gap: "1.5rem", flexDirection: "column" }}>
+        <Checkbox {...args} />
+        <Checkbox {...args} defaultChecked={true} />
+      </div>
+    )
+  },
+}
