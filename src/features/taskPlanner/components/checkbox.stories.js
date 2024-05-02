@@ -3,7 +3,7 @@ import { Checkbox } from "./Checkbox"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "TaskPlanner/Elements/Checkbox",
+  title: "Elements/Checkbox",
   component: Checkbox,
   parameters: {
     ...storybookSettings("centered"),
