@@ -4,7 +4,7 @@ import { storybookSettings } from "../storybook/globals"
 
 
 export default {
-  title: "Elements/Pin",
+  title: "1Elements/Pin",
   component: Pin,
   parameters: {
     ...storybookSettings("centered"),

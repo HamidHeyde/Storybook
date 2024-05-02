@@ -3,7 +3,7 @@ import { Checkbox } from "./Checkbox"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "Elements/Checkbox",
+  title: "1Elements/Checkbox",
   component: Checkbox,
   parameters: {
     ...storybookSettings("centered")

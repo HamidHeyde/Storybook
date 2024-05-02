@@ -3,7 +3,7 @@ import { Star } from "./Star"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "Elements/Star",
+  title: "1Elements/Star",
   component: Star,
   parameters: {
     ...storybookSettings("centered"),
