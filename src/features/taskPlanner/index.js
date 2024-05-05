@@ -2,9 +2,8 @@ import "./index.css"
 import { useState } from "react"
 import { TaskItem } from "./components/TaskItem"
 import { AddTask } from "./components/AddTask"
-import { TodoListData } from "./data/TodoListData"
 
-export const TodoApp = () => {
+export const TodoApp = ({ TodoListData }) => {
   const [todo, setTodo] = useState(TodoListData || [])
 
   // Star Click Handler
