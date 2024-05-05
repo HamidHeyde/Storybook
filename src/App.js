@@ -5,11 +5,12 @@ import { CustomComponents as HeatMaps } from "./features/customComponents"
 import { LeftMenu } from "./features/leftMenu"
 import { ReactComponent as Map } from "./features/customComponents/assets/map.svg"
 import { ReactComponent as Todo } from "./features/customComponents/assets/todo.svg"
+import { TodoListData } from "./features/taskPlanner/data/TodoListData"
 
 const menuItems = [
   {
     name: "HeatMaps",
-    icon: Map,
+    icon: Map
   },
   {
     name: "TodoApp",
@@ -19,8 +20,14 @@ const menuItems = [
 
 const getComponent = (name) => {
   const selectedMenu = {
-    "HeatMaps": HeatMaps,
-    "TodoApp": TodoApp,
+    HeatMaps: {
+      Component: HeatMaps,
+      Props: {},
+    },
+    TodoApp: {
+      Component: TodoApp,
+      Props: { TodoListData },
+    },
   }
 
   return selectedMenu[name] || TodoApp
@@ -32,7 +39,8 @@ const App = () => {
     setSelectedMenu(name)
   }
 
-  const Component = getComponent(selectedMenu)
+  const { Component, Props } = getComponent(selectedMenu)
+  
 
   return (
     <div className="appWrapper">
@@ -42,7 +50,7 @@ const App = () => {
         menuItemClickHandler={menuItemClickHandler}
       />
       <div className="mainContent">
-        <Component/>
+        <Component { ...Props } />
       </div>
     </div>
   )
