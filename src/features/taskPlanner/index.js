@@ -3,7 +3,7 @@ import { useState } from "react"
 import { TaskItem } from "./components/TaskItem"
 import { AddTask } from "./components/AddTask"
 
-export const TodoApp = ({ TodoListData }) => {
+export const TaskPlanner = ({ TodoListData }) => {
   const [todo, setTodo] = useState(TodoListData || [])
 
   // Star Click Handler
