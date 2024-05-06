@@ -16,12 +16,3 @@
   padding: 2px;
 }
 
-.starWrapper .starred {
-  fill: #e4ff40;
-  transform: rotate(-45deg);
-}
-
-.starWrapper .notStarred {
-  fill: #eee;
-}
-
