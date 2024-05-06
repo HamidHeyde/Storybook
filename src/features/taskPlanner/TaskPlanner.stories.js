@@ -1,21 +1,21 @@
-import { TodoApp } from "./"
+import { TaskPlanner } from "./"
 import { storybookSettings } from "./storybook/globals"
 
 export default {
   title: "3Modules/TaskPlanner",
-  component: TodoApp,
+  component: TaskPlanner,
   parameters: {
     ...storybookSettings("centered"),
   },
   tags: ["autodocs"],
   decorators: [
     (Story) => (
-      <div style={{width: "600px"}}>
+      <div style={{ width: "600px" }}>
         <Story />
       </div>
     ),
   ],
-  render: (args) => <TodoApp {...args} />,
+  render: (args) => <TaskPlanner {...args} />,
 }
 
 export const Default = {
