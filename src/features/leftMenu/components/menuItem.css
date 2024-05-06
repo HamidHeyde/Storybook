@@ -9,6 +9,10 @@
   justify-content: flex-start;
 }
 
+.menuItem:first-child {
+  border-top: 1px solid #eee;
+}
+
 .menuItem:hover {
   cursor: pointer;
   background-color: #007bff;
