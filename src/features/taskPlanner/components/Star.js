@@ -2,13 +2,18 @@ import "./star.css"
 import PropTypes from "prop-types"
 import StarIcon from "@mui/icons-material/Star"
 
-export const Star = ({ id, favorite, onClick, size }) => {
-  const starClass = favorite ? "starred" : "notStarred"
-
+export const Star = ({ id, favorite, onClick, size, backgroundColor }) => {
   const starProps = {
-    className: ["starBase", starClass].join(" "),
+    className: "starBase",
+    style: {
+      fontSize: size ? `${size}rem` : "1.5rem",
+      ...(favorite && {
+        fill: backgroundColor || "teal",
+        transform: "rotate(45deg)",
+      }),
+      ...(!favorite && { fill: "#eee" }),
+    },
     ...(onClick && { onClick: () => onClick(id) }),
-    style: { fontSize: size ? `${size}rem` : "1.5rem" },
   }
 
   return (
@@ -21,7 +26,8 @@ export const Star = ({ id, favorite, onClick, size }) => {
 // PropTypes
 Star.propTypes = {
   id: PropTypes.number,
-  pinned: PropTypes.bool,
+  favorite: PropTypes.bool,
   onClick: PropTypes.func,
   size: PropTypes.number,
+  backgroundColor: PropTypes.string,
 }

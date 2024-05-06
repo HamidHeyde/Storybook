@@ -5,13 +5,15 @@ import PushPinIcon from "@mui/icons-material/PushPin"
 /**
  * Renders a pin component with the specified properties.
  */
-export const Pin = ({ id, pinned, onClick, size }) => {
-  const pinClass = !!pinned ? "pinned" : "notPinned"
-
+export const Pin = ({ id, pinned, onClick, size, backgroundColor }) => {
   const pinProps = {
-    className: ["pinBase", pinClass].join(" "),
+    className: "pinBase",
+    style: {
+      fontSize: size ? `${size}rem` : "1.5rem",
+      ...(pinned && { fill: backgroundColor || "teal", transform: "rotate(45deg)" }),
+      ...(!pinned && { fill: "#eee" }),
+    },
     ...(onClick && { onClick: () => onClick(id) }),
-    style: { fontSize: size ? `${size}rem` : "1.5rem" },
   }
 
   return (
@@ -27,4 +29,5 @@ Pin.propTypes = {
   pinned: PropTypes.bool,
   onClick: PropTypes.func,
   size: PropTypes.number,
+  backgroundColor: PropTypes.string,
 }
