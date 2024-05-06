@@ -34,7 +34,7 @@
 .menuItem .menuText {
   box-sizing: border-box;
   color: #eee;
-  height: 20px;
+  /* height: 20px; */
   padding: 0 0 0 10px;
   display: flex;
 }
