@@ -15,12 +15,3 @@
   box-sizing: border-box;
   padding: 2px;
 }
-
-.pinWrapper .pinned {
-  fill: #e4ff40;
-  transform: rotate(45deg);
-}
-
-.pinWrapper .notPinned {
-  fill: #eee;
-}
