@@ -3,7 +3,7 @@ import { Pin } from "./Pin"
 import { Star } from "./Star"
 import { Checkbox } from "./Checkbox"
 import PropTypes from "prop-types"
-
+import { blue } from "../../theme/ColorPallette"
 
 export const TaskItem = ({
   taskItem,
@@ -24,8 +24,18 @@ export const TaskItem = ({
         />
       </div>
       <div className="right">
-        <Star id={id} favorite={favorite} onClick={onStarClickHandler} />
-        <Pin id={id} pinned={pinned} onClick={onPinClickHandler} />
+        <Star
+          id={id}
+          favorite={favorite}
+          onClick={onStarClickHandler}
+          backgroundColor={blue[400]}
+        />
+        <Pin
+          id={id}
+          pinned={pinned}
+          onClick={onPinClickHandler}
+          backgroundColor={blue[400]}
+        />
       </div>
     </div>
   )
