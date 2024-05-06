@@ -1,0 +1,49 @@
+.menuItem {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuItem:first-child {
+  border-top: 1px solid #eee;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+  background-color: #007bff;
+}
+
+.menuItemDeActive {
+  background-color: transparent;
+}
+.menuItemActive {
+  background-color: #007bff;
+}
+
+.menuItem .menuIcon {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+}
+
+.menuItem .menuText {
+  box-sizing: border-box;
+  color: #eee;
+  /* height: 20px; */
+  padding: 0 0 0 10px;
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .menuItem .menuText {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=features-leftMenu-components-MenuItem-stories.3ccfe01e.chunk.css.map*/

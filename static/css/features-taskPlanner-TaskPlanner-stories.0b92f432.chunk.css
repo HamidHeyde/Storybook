@@ -1,3 +1,31 @@
+.todoAppWrapper {
+  box-sizing: border-box;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskPlannerWrapper {
+  box-sizing: border-box;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 0 10px;
+}
+
 .todoItem {
   width: 100%;
   display: flex;
@@ -43,15 +71,6 @@
   padding: 2px;
 }
 
-.pinWrapper .pinned {
-  fill: #e4ff40;
-  transform: rotate(45deg);
-}
-
-.pinWrapper .notPinned {
-  fill: #eee;
-}
-
 .starWrapper {
   box-sizing: border-box;
   padding: 0 1px;
@@ -68,15 +87,6 @@
 .starBase:hover {
   box-sizing: border-box;
   padding: 2px;
-}
-
-.starWrapper .starred {
-  fill: #e4ff40;
-  transform: rotate(-45deg);
-}
-
-.starWrapper .notStarred {
-  fill: #eee;
 }
 
 
@@ -139,5 +149,42 @@
     font-style: normal;
     font-family: system-ui;
 }
+.addTodoWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 50px 0 0 0; */
+}
+.addTodoButton {
+  box-sizing: border-box;
+  border: 1px teal solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: teal;
+  color: #eee;
+  box-shadow: 0px 0px 6px #00000029;
+}
 
-/*# sourceMappingURL=features-taskPlanner-components-TaskItem-stories.93171254.chunk.css.map*/
+.addTodoButton:hover {
+  cursor: pointer;
+}
+
+.addTodoButton:active {
+  font-size: 11px;
+  background-color: teal;
+  border: 1px solid teal;
+}
+.addTodoInput {
+  border: 1px teal solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.addTodoInput:focus {
+    outline: none;
+}
+
+/*# sourceMappingURL=features-taskPlanner-TaskPlanner-stories.0b92f432.chunk.css.map*/
