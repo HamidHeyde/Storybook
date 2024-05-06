@@ -1,7 +1,7 @@
-import { TodoApp } from "../taskPlanner"
+import { TaskPlanner } from "../taskPlanner"
 import { CustomComponents as HeatMaps } from "../customComponents"
 import { ReactComponent as Map } from "../customComponents/assets/map.svg"
-import { ReactComponent as Todo } from "../customComponents/assets/todo.svg"
+import { ReactComponent as Task } from "../customComponents/assets/todo.svg"
 import { TodoListData } from "../taskPlanner/data/TodoListData"
 
 export const HomePageComponents = [
@@ -12,9 +12,9 @@ export const HomePageComponents = [
     Props: {},
   },
   {
-    name: "TodoApp",
-    icon: Todo,
-    Component: TodoApp,
+    name: "TaskPlanner",
+    icon: Task,
+    Component: TaskPlanner,
     Props: { TodoListData },
   },
 ]
