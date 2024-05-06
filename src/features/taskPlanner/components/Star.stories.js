@@ -4,7 +4,7 @@ import { storybookSettings } from "../storybook/globals"
 import { red, orange, yellow, green, blue } from "../../theme/ColorPallette"
 
 export default {
-  title: "1Elements/Star",
+  title: "Elements/Star",
   component: Star,
   parameters: {
     ...storybookSettings("centered"),

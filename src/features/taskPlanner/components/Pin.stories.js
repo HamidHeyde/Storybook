@@ -5,7 +5,7 @@ import { red, orange, yellow, green, blue } from "../../theme/ColorPallette"
 
 
 export default {
-  title: "1Elements/Pin",
+  title: "Elements/Pin",
   component: Pin,
   parameters: {
     ...storybookSettings("centered"),

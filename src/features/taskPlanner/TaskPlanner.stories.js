@@ -2,7 +2,7 @@ import { TaskPlanner } from "./"
 import { storybookSettings } from "./storybook/globals"
 
 export default {
-  title: "3Modules/TaskPlanner",
+  title: "Modules/TaskPlanner",
   component: TaskPlanner,
   parameters: {
     ...storybookSettings("centered"),

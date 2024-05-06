@@ -3,7 +3,7 @@ import { TextInput } from "./TextInput"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "1Elements/TextInput",
+  title: "Elements/TextInput",
   component: TextInput,
   parameters: {
     ...storybookSettings("centered"),

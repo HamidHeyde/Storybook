@@ -4,7 +4,7 @@ import { LeftMenuRightContentLayout } from "./LeftMenuRightContentLayout"
 import { ReactComponent as Map } from "../customComponents/assets/map.svg"
 
 export default {
-  title: "4Layouts/Left Menu Right Content",
+  title: "Layouts/Left Menu Right Content",
   component: LeftMenuRightContentLayout,
   parameters: {
     ...storybookSettings(""),

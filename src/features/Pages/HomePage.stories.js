@@ -2,7 +2,7 @@ import { HomePage } from "./HomePage"
 import { storybookSettings } from "./storybook/globals"
 
 export default {
-  title: "5Pages/HomePage",
+  title: "Pages/HomePage",
   component: HomePage,
   parameters: {
     ...storybookSettings(""),

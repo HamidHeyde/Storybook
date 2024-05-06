@@ -2,7 +2,7 @@ import { storybookSettings } from "./storybook/globals"
 import { red, orange, yellow, green, blue } from "./ColorPallette"
 
 export default {
-  title: "6Theme/ColorPallette",
+  title: "Theme/ColorPallette",
   parameters: {
     ...storybookSettings("centered"),
   },

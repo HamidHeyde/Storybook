@@ -3,7 +3,7 @@ import { Button } from "./Button"
 import { storybookSettings } from "../storybook/globals"
 
 export default {
-  title: "1Elements/Button",
+  title: "Elements/Button",
   component: Button,
   parameters: {
     ...storybookSettings("centered"),

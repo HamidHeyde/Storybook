@@ -4,7 +4,7 @@ import { storybookSettings } from "../storybook/globals"
 import { ReactComponent as Map } from "../../customComponents/assets/map.svg"
 
 export default {
-  title: "2Compounds/MenuItem",
+  title: "Compounds/MenuItem",
   component: MenuItem,
   parameters: {
     ...storybookSettings("centered"),
