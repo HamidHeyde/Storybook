@@ -19,7 +19,7 @@ export default {
         style={{
           boxSizing: "border-box",
           width: "100vw",
-          height: "100vh",
+          height: "500px",
           display: "flex",
           flexDirection: "row",
         }}
