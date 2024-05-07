@@ -25,9 +25,5 @@ export const PanelContent = ({ maps, setMaps, showAlert, setShowAlert }) => {
     ...(panel === "DataPanel" && { maps, setMaps }),
   }
 
-  return (
-    <div className="panelContent">
-      <Component {...panelProperties} />
-    </div>
-  )
+  return <Component {...panelProperties} />
 }
