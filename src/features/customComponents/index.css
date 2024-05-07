@@ -16,13 +16,3 @@
   justify-content: center;
 }
 
-.panelWrapper {
-  width: 100%;
-  border-radius: 5px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-shadow: 0px 0px 6px #00000029;
-}
