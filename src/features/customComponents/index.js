@@ -1,9 +1,9 @@
 import "./index.css"
 import { useState } from "react"
 import { MapData } from "./data/MapsData"
-import { PanelHeader } from "./components/mainPanel/PanelHeader"
 import { PanelContent } from "./components/mainPanel/PanelContent"
 import { AppAlert } from "./components/AppAlert"
+import { MapsMainPanelLayout } from "../Layouts/MapsMainPanelLayout"
 
 export const CustomComponents = () => {
   const [maps, setMaps] = useState(MapData || [])
@@ -16,8 +16,7 @@ export const CustomComponents = () => {
   return (
     <div className="customComponentsAppWrapper">
       <div className="customComponentsWrapper">
-        <div className="panelWrapper">
-          <PanelHeader />
+        <MapsMainPanelLayout>
           <PanelContent
             maps={maps}
             setMaps={setMaps}
@@ -32,7 +31,7 @@ export const CustomComponents = () => {
               onclose={() => setShowAlert({ ...showAlert, visible: false })}
             />
           )}
-        </div>
+        </MapsMainPanelLayout>
       </div>
     </div>
   )
