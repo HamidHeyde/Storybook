@@ -1,0 +1,180 @@
+.infoPanelWrapper {
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoWrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.infoWrapper .title {
+  color: #4b4b4b;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+
+.infoWrapper .text {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.infoActionWrapper {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoActionWrapper .checkBoxWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoActionWrapper .text {
+  color: #888888;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.infoActionWrapper .infoButton {
+  box-sizing: border-box;
+  width: 30%;
+  border: 1px teal solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: teal;
+  color: #eee;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.infoActionWrapper .infoButton:hover {
+  cursor: pointer;
+}
+
+.infoActionWrapper .infoButton:active {
+  font-size: 11px;
+  background-color: teal;
+  border: 1px solid teal;
+}
+.checkboxWrapper {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.checkboxWrapper input[type="checkbox"] {
+  -webkit-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid teal;
+  border-radius: 4px;
+  outline: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.checkboxWrapper input[type="checkbox"]:hover {
+  border-color: teal;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked {
+  border: 1px solid teal;
+  background-color: teal;
+}
+
+.checkboxWrapper input:active {
+  border: 1px solid teal;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked + label::before{
+  content: "\2713";
+  display: block;
+  text-align: center;
+  color: #eee;
+  position: absolute;
+  left: 0.35rem;
+  top: 0.12rem;
+}
+
+.checkboxWrapper label {
+  margin-left: 1px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.checkboxWrapper label::before {
+    font-weight: bold;
+    font-style: normal;
+    font-family: system-ui;
+}
+.panelWrapper {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.panelContent {
+  box-sizing: border-box;
+  width: 100%;
+  height: 630px;
+  display: flex;
+  padding: 15px 0 0 0;
+  border-radius: 0 0 0 5px;
+  flex-direction: row;
+}
+.panelHeader {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  border-radius: 5px 5px 0 0;
+  color: #eee;
+}
+
+.panelHeader .headerContent {
+  width: 21%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+
+
+/*# sourceMappingURL=features-customComponents-components-infoPanel-index-stories.f87de78a.chunk.css.map*/
