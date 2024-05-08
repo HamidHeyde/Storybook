@@ -2,6 +2,7 @@ import "./index.css"
 import { useState } from "react"
 import { TaskItem } from "./components/TaskItem"
 import { AddTask } from "./components/AddTask"
+import propTypes from "prop-types"
 
 export const TaskPlanner = ({ TodoListData }) => {
   const [todo, setTodo] = useState(TodoListData || [])
@@ -69,4 +70,17 @@ export const TaskPlanner = ({ TodoListData }) => {
       </div>
     </div>
   )
+}
+
+// PropTypes
+TaskPlanner.propTypes = {
+  TodoListData: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.number.isRequired,
+      title: propTypes.string.isRequired,
+      completed: propTypes.bool,
+      pinned: propTypes.bool,
+      favorite: propTypes.bool,
+    })
+  ),
 }

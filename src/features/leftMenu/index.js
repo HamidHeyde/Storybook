@@ -1,5 +1,6 @@
 import "./index.css"
 import { MenuItem } from "./components/MenuItem"
+import propTypes from "prop-types"
 
 export const LeftMenu = ({ items, selectedMenu, menuItemClickHandler }) => {
   return (
@@ -14,4 +15,16 @@ export const LeftMenu = ({ items, selectedMenu, menuItemClickHandler }) => {
       ))}
     </div>
   )
+}
+
+//  propTypes
+LeftMenu.propTypes = {
+  items: propTypes.arrayOf(
+    propTypes.shape({
+      name: propTypes.string.isRequired,
+      icon: propTypes.element.isRequired,
+    })
+  ).isRequired,
+  selectedMenu: propTypes.string.isRequired,
+  menuItemClickHandler: propTypes.func.isRequired,
 }
