@@ -1,10 +1,11 @@
 import './dataPanelHeader.css'
+import { Tab } from '../Tab'
 
 export const DataPanelHeader = () => {
   return (
     <div className="dataPanelHeaderWrapper">
       <div className="headerTop">
-        <div className="headerTab">Active</div>
+        <Tab>Active</Tab>
       </div>
     </div>
   )
