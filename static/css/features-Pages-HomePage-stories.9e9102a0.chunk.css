@@ -450,12 +450,10 @@
   justify-content: flex-start;
   border-bottom: 1px solid #d9d8d8;
 }
-
 .headerTab {
   box-sizing: border-box;
   cursor: pointer;
   color: #eee;
-  width: 70px;
   height: 35px;
   display: flex;
   flex-direction: row;
@@ -467,9 +465,8 @@
   font-weight: 700;
   line-height: 1.167;
   border-radius: 5px 5px 0 0;
+  padding: 0 10px;
 }
-
-
 .dataPanelContentWrapper {
   box-sizing: border-box;
   width: 100%;
@@ -1445,4 +1442,4 @@
 }
 
 
-/*# sourceMappingURL=features-Pages-HomePage-stories.c7a999c6.chunk.css.map*/
+/*# sourceMappingURL=features-Pages-HomePage-stories.9e9102a0.chunk.css.map*/

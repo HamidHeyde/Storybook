@@ -1,0 +1,14 @@
+.addButton {
+  color: #9a9a9a;
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.addButton:hover {
+  color: teal;
+}
+
+
+/*# sourceMappingURL=features-customComponents-components-AddButton-stories.c65e3e1e.chunk.css.map*/

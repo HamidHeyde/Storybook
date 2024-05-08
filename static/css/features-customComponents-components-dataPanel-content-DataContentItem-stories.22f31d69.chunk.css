@@ -1,0 +1,126 @@
+.mapWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mapHeader {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px 0;
+  border-bottom: 1px solid #d9d8d8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mapHeader .left {
+  box-sizing: border-box;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mapHeader .left .text {
+  color: #4b4b4b;
+  margin-left: 5px;
+}
+
+.mapHeader .right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.mapSettingsWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #d9d8d8;
+  padding: 0px 10px;
+}
+
+.arrowDownIcon {
+  box-sizing: border-box;
+  fill: teal;
+  transition-property: transform, background-color;
+  transition-duration: 0.45s;
+  transition-timing-function: ease-out;
+  border-radius: 50%;
+}
+
+.arrowDownIcon:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.arrowDownIconOpen{
+  transform: rotate(-180deg);
+}
+.starWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+  transition-property: transform, fill;
+  transition-duration: 0.65s;
+  transition-timing-function: ease-out;
+}
+
+.starWrapper:hover {
+  cursor: pointer;
+}
+
+.starBase {
+  box-sizing: border-box;
+}
+
+.starBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.starWrapper .starred2 {
+  fill: teal;
+  transform: rotate(-45deg);
+}
+
+.starWrapper .notStarred2 {
+  fill: #eee;
+}
+
+
+.pinWrapper {
+  box-sizing: border-box;
+  padding: 0 1px;
+}
+
+.pinWrapper:hover {
+  cursor: pointer;
+}
+
+.pinBase {
+  box-sizing: border-box;
+}
+
+.pinBase:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.pinWrapper .pinned2 {
+  fill: teal;
+  transform: rotate(45deg);
+}
+
+.pinWrapper .notPinned2 {
+  fill: #eee;
+}
+
+
+/*# sourceMappingURL=features-customComponents-components-dataPanel-content-DataContentItem-stories.22f31d69.chunk.css.map*/
