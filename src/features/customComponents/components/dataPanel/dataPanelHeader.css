@@ -17,22 +17,3 @@
   justify-content: flex-start;
   border-bottom: 1px solid #d9d8d8;
 }
-
-.headerTab {
-  box-sizing: border-box;
-  cursor: pointer;
-  color: #eee;
-  width: 70px;
-  height: 35px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid teal;
-  background-color: teal;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.167;
-  border-radius: 5px 5px 0 0;
-}
-
