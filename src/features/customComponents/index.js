@@ -8,8 +8,8 @@ import { MapsMainPanelLayout } from "../Layouts/MapsMainPanelLayout"
 export const CustomComponents = () => {
   const [maps, setMaps] = useState(MapData || [])
   const [showAlert, setShowAlert] = useState({
-    type: "",
-    message: "",
+    type: "success",
+    message: "Operation completed successfully",
     visible: false,
   })
 
