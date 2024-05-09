@@ -12,6 +12,7 @@ const config = {
     "@storybook/addon-interactions",
     "@storybook/addon-jest",
     "storybook-addon-deep-controls",
+    "storybook-addon-pseudo-states",
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -21,6 +22,6 @@ const config = {
     autodocs: "tag",
     defaultName: "Docs",
   },
-  staticDirs: ["../public"]
+  staticDirs: ["../public"],
 }
 export default config;
