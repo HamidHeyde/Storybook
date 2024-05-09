@@ -1,5 +1,6 @@
 import "./mapTextField.css"
 import { MapLabel } from "./MapLabel"
+import propTypes from "prop-types"
 
 export const MapTextField = ({
   width,
@@ -32,4 +33,15 @@ export const MapTextField = ({
   ) : (
     <input {...textFieldProps} />
   )
+}
+
+// propTypes
+MapTextField.propTypes = {
+  width: propTypes.string,
+  name: propTypes.string,
+  value: propTypes.string,
+  placeholder: propTypes.string,
+  disabled: propTypes.bool,
+  readonly: propTypes.bool,
+  onChange: propTypes.func,
 }
