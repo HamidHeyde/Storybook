@@ -1,0 +1,100 @@
+.colorSliderWrapper {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 0 10px 0;
+}
+
+.colorSliderWrapper .colorSlider {
+  width: 89%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.colorSliderWrapper .colorSlider:hover {
+  opacity: 1;
+}
+
+.colorSlider .base-Slider-rail {
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  background-color: #d9d8d8;
+}
+
+.colorSlider .base-Slider-track {
+  height: 4px;
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.colorSlider .base-Slider-thumb {
+  width: 10px;
+  border: 1px solid #888888;
+  height: 10px;
+  outline: 0;
+  padding: 0px;
+  z-index: 20;
+  position: absolute;
+  transform: translate(-0px, 3px);
+  background: #888888;
+  box-sizing: border-box;
+  margin-top: -6px;
+  margin-left: -6px;
+  border-radius: 50%;
+}
+
+.colorSlider .base-Slider-thumb[data-index="0"] {
+  color: #549ff5;
+  border-color: #549ff5;
+  background-color: #549ff5;
+}
+
+.colorSlider .base-Slider-thumb[data-index="1"] {
+  color: #1dbe1d;
+  border-color: #1dbe1d;
+  background-color: #1dbe1d;
+}
+
+.colorSlider .base-Slider-thumb[data-index="2"] {
+  color: #ed1c24;
+  border-color: #ed1c24;
+  background-color: #ed1c24;
+}
+
+.colorSlider .base-Slider-thumb .label {
+  color: #9a9a9a;
+  border: 0.7px solid #9a9a9a;
+  padding: 3px;
+  z-index: 30;
+  position: absolute;
+  font-size: 14px;
+  background: white;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.colorSlider .base-Slider-thumb .label[data-index="0"] {
+  color: #d9d8d8;
+  border: 0.7px solid #d9d8d8;
+  transform: translate(-10px, -35px);
+}
+
+.colorSlider .base-Slider-thumb .label[data-index="1"] {
+  transform: translate(-10px, -35px);
+}
+
+.colorSlider .base-Slider-thumb .label[data-index="2"] {
+  transform: translate(-15px, -35px);
+}
+
+
+/*# sourceMappingURL=features-customComponents-components-MapColorSlider-stories.6493d370.chunk.css.map*/

@@ -1,0 +1,31 @@
+.mapTextAreaWrapper {
+  color: #888888;
+  border: 1px solid #9a9a9a;
+  padding: 4px 5px;
+  max-height: 42px;
+  min-height: 42px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.mapTextAreaWrapper:focus {
+  outline: none;
+}
+
+.mapTextAreaWrapper::-webkit-scrollbar {
+  width: 5;
+}
+
+.titleText {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4B4B4B;
+}
+
+.normalText {
+  font-size: 13px;
+  font-weight: 300;
+  color: #4B4B4B;
+}
+
+/*# sourceMappingURL=features-customComponents-components-MapTextArea-stories.9bce6737.chunk.css.map*/

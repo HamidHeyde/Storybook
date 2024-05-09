@@ -1,0 +1,108 @@
+.shadowSliderWrapper {
+  height: 50px;
+  display: flex;
+  padding: 0 0 10px 0;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shadowSliderWrapper .shadowSlider {
+  width: 89%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shadowSliderWrapper .shadowSlider:hover {
+  opacity: 1;
+}
+
+.shadowSlider .base-Slider-rail {
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  background-color: #d9d8d8;
+}
+
+.shadowSlider .base-Slider-track {
+  height: 4px;
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  background-color: #d9d8d8;
+}
+
+.shadowSlider .base-Slider-thumb {
+  border: 1px solid #888888;
+  outline: 0;
+  padding: 0px;
+  z-index: 20;
+  position: absolute;
+  background: #888888;
+  box-sizing: border-box;
+  margin-top: -6px;
+  margin-left: -6px;
+  border-radius: 50%;
+}
+
+.shadowSlider .base-Slider-thumb[data-index="0"] {
+  width: 25px;
+  height: 10px;
+  transform: translate(-7px, 3px);
+}
+
+.shadowSlider .base-Slider-thumb[data-index="1"] {
+  width: 30px;
+  height: 15px;
+  transform: translate(-24px, 0px);
+}
+
+.shadowSlider .base-Slider-thumb[data-index="2"] {
+  width: 40px;
+  height: 20px;
+  transform: translate(-24px, -2px);
+}
+
+.shadowSlider .base-Slider-thumb[data-index="3"] {
+  width: 50px;
+  height: 25px;
+  transform: translate(-24px, -4px);
+}
+
+.shadowSlider .base-Slider-thumb .label {
+  color: #9a9a9a;
+  border: 0.7px solid #9a9a9a;
+  padding: 3px;
+  z-index: 30;
+  position: absolute;
+  font-size: 14px;
+  background: white;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.shadowSlider .base-Slider-thumb .label[data-index="0"] {
+  color: #d9d8d8;
+  border: 0.7px solid #d9d8d8;
+  transform: translate(0px, -40px);
+}
+
+.shadowSlider .base-Slider-thumb .label[data-index="1"] {
+  transform: translate(-1px, -37px);
+}
+
+.shadowSlider .base-Slider-thumb .label[data-index="2"] {
+  transform: translate(2px, -35px);
+}
+
+.shadowSlider .base-Slider-thumb .label[data-index="3"] {
+  transform: translate(7px, -33px);
+}
+
+
+/*# sourceMappingURL=features-customComponents-components-MapShadowSlider-stories.bb7a3190.chunk.css.map*/
