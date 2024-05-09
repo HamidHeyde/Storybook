@@ -1,5 +1,6 @@
 import "./sortButton.css"
 import { useState } from "react"
+import propTypes from "prop-types"
 
 const sortFuncs = {
   az_asc: (a, b) => a["name"].localeCompare(b["name"]),
@@ -47,4 +48,10 @@ export const SortButton = ({ maps, setMaps }) => {
       )}
     </div>
   )
+}
+
+// propTypes
+SortButton.propTypes = {
+  maps: propTypes.arrayOf(propTypes.object),
+  setMaps: propTypes.func,
 }
