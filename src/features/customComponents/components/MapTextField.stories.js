@@ -65,19 +65,27 @@ export const Readonly = {
 export const SizeVariety = {
   parameters: {
     controls: {
-      exclude: ["width", "name", "value", "onChange", "placeholder", "disabled", "readonly"],
+      exclude: [
+        "width",
+        "name",
+        "value",
+        "onChange",
+        "placeholder",
+        "disabled",
+        "readonly",
+      ],
     },
   },
-  render: () => {
+  render: (args) => {
     return (
       <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <MapTextField { ...textArgs } width={"50px"} />
-        <MapTextField { ...textArgs } width={"100px"} />
-        <MapTextField { ...textArgs } width={"200px"} />
-        <MapTextField { ...textArgs } width={"300px"} />
-        <MapTextField { ...textArgs } width={"400px"} />
-        <MapTextField { ...textArgs } width={"500px"} />
+        <MapTextField {...textArgs} width={"50px"} />
+        <MapTextField {...textArgs} width={"100px"} />
+        <MapTextField {...textArgs} width={"200px"} />
+        <MapTextField {...textArgs} width={"300px"} />
+        <MapTextField {...textArgs} width={"400px"} />
+        <MapTextField {...textArgs} width={"500px"} />
       </div>
     )
-  }
+  },
 }
