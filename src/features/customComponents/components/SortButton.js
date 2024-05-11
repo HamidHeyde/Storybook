@@ -1,5 +1,5 @@
 import "./sortButton.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import propTypes from "prop-types"
 
 const sortFuncs = {
@@ -7,8 +7,12 @@ const sortFuncs = {
   az_desc: (a, b) => b["name"].localeCompare(a["name"]),
 }
 
-export const SortButton = ({ maps, setMaps }) => {
+export const SortButton = ({ maps, setMaps, sortOptionsActive }) => {
   const [showSortOptions, setShowSortOptions] = useState(false)
+
+  useEffect(() => {
+    sortOptionsActive && setShowSortOptions(sortOptionsActive)
+  }, [sortOptionsActive])
 
   const toggleOptionMenu = () => {
     setShowSortOptions((prev) => !prev)
@@ -54,4 +58,5 @@ export const SortButton = ({ maps, setMaps }) => {
 SortButton.propTypes = {
   maps: propTypes.arrayOf(propTypes.object),
   setMaps: propTypes.func,
+  sortOptionsActive: propTypes.bool,
 }
