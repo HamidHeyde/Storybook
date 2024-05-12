@@ -2,6 +2,7 @@ import "./mapColorSlider.css"
 import React, { useState, useEffect } from "react"
 import { Box } from "@mui/system"
 import { Slider } from "@mui/base"
+import propTypes from "prop-types"
 
 export const MapColorSlider = ({
   width,
@@ -72,4 +73,13 @@ export const MapColorSlider = ({
       />
     </Box>
   )
+}
+
+// propTypes
+MapColorSlider.propTypes = {
+  width: propTypes.string,
+  name: propTypes.string,
+  defaultValues: propTypes.array,
+  onChange: propTypes.func,
+  disabled: propTypes.bool,
 }
