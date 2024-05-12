@@ -1,5 +1,6 @@
 import "./mapTextArea.css"
 import { MapLabel } from "./MapLabel"
+import propTypes from "prop-types"
 
 export const MapTextArea = ({
   width,
@@ -38,4 +39,15 @@ export const MapTextArea = ({
   ) : (
     <textarea {...textAreaProps} />
   )
+}
+
+// propTypes
+MapTextArea.propTypes = {
+  width: propTypes.string,
+  name: propTypes.string,
+  value: propTypes.string,
+  placeholder: propTypes.string,
+  disabled: propTypes.bool,
+  readonly: propTypes.bool,
+  onChange: propTypes.func,
 }
