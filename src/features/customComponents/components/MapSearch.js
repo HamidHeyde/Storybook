@@ -1,11 +1,16 @@
 import "./mapSearch.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import SearchIcon from "@mui/icons-material/Search"
 import ClearIcon from "@mui/icons-material/Clear"
+import propTypes from "prop-types"
 
-export const MapSearch = ({ maps, setMaps }) => {
+export const MapSearch = ({ maps, setMaps, searchBoxOpen }) => {
   const [searchText, setSearchText] = useState("")
   const [isSearchBoxOpen, SetIsSearchBoxOpen] = useState(false)
+
+  useEffect(() => {
+    searchBoxOpen && SetIsSearchBoxOpen(searchBoxOpen)
+  }, [searchBoxOpen])
 
   const handleOnKeyDown = (e) => {
     if (e.keyCode === 13) {
@@ -51,4 +56,11 @@ export const MapSearch = ({ maps, setMaps }) => {
       )}
     </div>
   )
+}
+
+//propTypes
+MapSearch.propTypes = {
+  maps: propTypes.array,
+  setMaps: propTypes.func,
+  searchBoxOpen: propTypes.bool,
 }
