@@ -2,6 +2,7 @@ import './mapShadowSlider.css'
 import React, { useState, useEffect } from "react"
 import { Box } from "@mui/system"
 import { Slider } from "@mui/base"
+import propTypes from "prop-types"
 
 export const MapShadowSlider = ({
   width,
@@ -57,4 +58,13 @@ export const MapShadowSlider = ({
       />
     </Box>
   )
+}
+
+// propTypes
+MapShadowSlider.propTypes = {
+  width: propTypes.string,
+  name: propTypes.string,
+  defaultValues: propTypes.arrayOf(propTypes.number),
+  onChange: propTypes.func,
+  disabled: propTypes.bool,
 }
